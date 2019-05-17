@@ -7,6 +7,7 @@ public class Guerrier extends Personnage {
     public String toString() {
 
         return super.toString()
+                + "GUERRIER" + "\n"
                 + "Nom de l'arme: " + this.arme.getNameWeapon() + "\n"
                 + "Atk de l'arme: " + this.arme.getNvAtk();
 
@@ -16,11 +17,11 @@ public class Guerrier extends Personnage {
     public Guerrier(String nom, String image, int pv, int atk, Arme arme) {
         super(nom, image, pv, atk);
         this.arme = arme;
-       // this.bouclier = bouclier;
+        // this.bouclier = bouclier;
 
 
     }
-
+    //Constructeur default
     public Guerrier() {
 
     }

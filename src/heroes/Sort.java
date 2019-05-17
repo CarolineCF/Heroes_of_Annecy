@@ -5,8 +5,8 @@ public class Sort {
     private int nvAtk;
 
     public Sort(String nameSort, int nvAtk) {
-    this.nameSort = nameSort;
-    this.nvAtk = nvAtk;
+        this.nameSort = nameSort;
+        this.nvAtk = nvAtk;
     }
 
     public void setNameSort(String nameSort) {

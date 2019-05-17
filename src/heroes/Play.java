@@ -1,12 +1,13 @@
 package heroes;
 
 import java.util.Scanner;
-
+import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class Play {
 
-
-    public static Personnage stockage[] = new Personnage[10];
+    public static ArrayList<Personnage> listehero = new ArrayList();
+    // public static Personnage stockage[] = new Personnage[10];
     private static Scanner sc = new Scanner(System.in);
 
     private static String e = "";
@@ -39,6 +40,14 @@ public class Play {
             } else if (classe.equalsIgnoreCase("exit")) {
 
                 System.exit(0);
+            } else if (classe.equalsIgnoreCase("modifier")) {
+                liste();
+                modify();
+
+            } else if (classe.equalsIgnoreCase("delete")) {
+                liste();
+                delete();
+
             }
 
         }
@@ -51,11 +60,9 @@ public class Play {
         Guerrier guerrier = new Guerrier();
 
 
-
         System.out.println("Nom ? :");
         String name = sc.nextLine();
         guerrier.setNom(name);
-
 
 
         System.out.println("import une photo via une url");
@@ -78,7 +85,6 @@ public class Play {
         String nomArme = sc.nextLine();
 
 
-
         System.out.println("Définie la puissance de ton arme ");
         int atkArme = sc.nextInt();
         Arme blublu = new Arme(nomArme, atkArme);
@@ -89,7 +95,7 @@ public class Play {
         System.out.println("Settings du Guerrier terminus");
 
 
-        stockage[g] = guerrier;
+        listehero.add(guerrier);
 
         g++;
     }
@@ -97,7 +103,6 @@ public class Play {
     //Function création mage
     public static void createMage() {
         Magicien mage = new Magicien();
-
 
 
         System.out.println("Nom ? :");
@@ -124,8 +129,6 @@ public class Play {
         String nomArme = sc.nextLine();
 
 
-
-
         System.out.println("Définie la puissance de ton arme ");
         int atkArme = sc.nextInt();
         Sort blabla = new Sort(nomArme, atkArme);
@@ -135,7 +138,7 @@ public class Play {
 
         System.out.println("\n" + "Settings du Mage terminus" + "\n");
 
-        stockage[g] = mage;
+        listehero.add(mage);
         g++;
 
     }
@@ -145,20 +148,59 @@ public class Play {
 
         System.out.println("\n" + "Plusieurs choix s'offrent à vous:" + "\n"
                 + "Entrez votre choix de personnage (mage / guerrier) ?" + "\n"
+                + "Supprimer un héro -> entrez |delete|" + "\n"
                 + "Afficher la liste des héros -> entrez |liste|" + "\n"
                 + "Quitter le jeu -> entrez |exit|");
     }
 
     //Function affichage liste des héros
     public static void liste() {
-        for (int z = 0; z < stockage.length; z++) {
-            if (stockage[z] != null) {
-                System.out.println("Personnages créés: " + "\n" + " "+ stockage[z] + "\n");
-            }
-
+//
+        for (Personnage hero : listehero) {
+            System.out.println("\n" + " Liste des héros: " + hero.getNom() + "\n");
         }
     }
-}
+
+    public static void delete() {
+        int index = -1;
+
+        for (Personnage hero : listehero) {
+            index++;
+            System.out.println("\n" + "Héro n°" + index);
+            System.out.println(hero);
+
+        }
+        System.out.println("\n" + "Entrez le numéro du héro et appuyez sur entrée pour le supprimer");
+        index = sc.nextInt();
+
+        listehero.remove(index);
+
+    }
+
+
+    public static void modify() {
+        int indexa = -1;
+        for (Personnage hero : listehero) {
+            indexa++;
+            System.out.println("\n" + "Héro n°" + indexa);
+            System.out.println(hero);
+
+            System.out.println("\n" + "Entrez le numéro du héro et appuyez sur entrée pour le modifier");
+
+            indexa = sc.nextInt();
+            liste();
+
+        }
+
+
+        }
+
+    }
+
+
+
+
+
 
 
 

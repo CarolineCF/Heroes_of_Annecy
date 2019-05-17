@@ -5,22 +5,24 @@ public class Magicien extends Personnage {
     private String philtre;
 
 
-  public String toString() {
+    public String toString() {
         return
                 super.toString()
-                //+"Possède un philtre " + this.philtre + "\n"
-                + "Nom du sort: " + this.sort.getNameSort() + "\n"
-                + "Puissance du sort: " + this.sort.getNvAtk();
+                        + "MAGE" + "\n"
+                        //+"Possède un philtre " + this.philtre + "\n"
+                        + "Nom du sort: " + this.sort.getNameSort() + "\n"
+                        + "Puissance du sort: " + this.sort.getNvAtk();
 
     }
-    public Magicien(){
+
+    public Magicien() {
 
     }
 
-    public Magicien(String nom, String image, int pv, int atk,Sort sort, String philtre){
-    super( nom,image,pv,atk);
-    this.sort = sort;
-    this.philtre = philtre;
+    public Magicien(String nom, String image, int pv, int atk, Sort sort, String philtre) {
+        super(nom, image, pv, atk);
+        this.sort = sort;
+        this.philtre = philtre;
 
     }
 

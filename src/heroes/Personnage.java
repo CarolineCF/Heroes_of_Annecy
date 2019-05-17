@@ -6,14 +6,16 @@ public abstract class Personnage {
     private String image = null;
     private int pv;
     private int atk;
-    protected Personnage(String nom, String image, int pv, int atk){
+
+    protected Personnage(String nom, String image, int pv, int atk) {
         this.nom = nom;
         this.image = image;
         this.pv = pv;
         this.atk = atk;
 
     }
-    public Personnage(){
+
+    public Personnage() {
 
     }
 

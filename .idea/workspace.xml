@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34f95d89-cccc-4cf7-8ab7-8e183347929d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/heroes/Personnage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Garrosh_vs_Jaina/heroes/Arme.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Garrosh_vs_Jaina/heroes/Arme.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Garrosh_vs_Jaina/heroes/Guerrier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Garrosh_vs_Jaina/heroes/Guerrier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Garrosh_vs_Jaina/heroes/Magicien.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Garrosh_vs_Jaina/heroes/Magicien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Garrosh_vs_Jaina/heroes/Play.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Garrosh_vs_Jaina/heroes/Play.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Garrosh_vs_Jaina/heroes/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Garrosh_vs_Jaina/heroes/Sort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heroes/Arme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/Arme.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heroes/Guerrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/Guerrier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heroes/Magicien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/Magicien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/Personnage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heroes/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/Play.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heroes/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/Sort.java" afterDir="false" />
     </list>
@@ -31,10 +25,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/heroes/Play.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+            <state relative-caret-position="471">
+              <caret line="190" column="12" selection-start-line="190" selection-start-column="12" selection-end-line="190" selection-end-column="20" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#createMage#0;class#Play#0" />
                 <element signature="method#menu#0;class#Play#0" />
+                <element signature="method#liste#0;class#Play#0" />
               </folding>
             </state>
           </provider>
@@ -43,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/heroes/Guerrier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="-263">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding>
                 <element signature="e#672#673#0" expanded="true" />
                 <element signature="e#699#700#0" expanded="true" />
@@ -60,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/heroes/Personnage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="357">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="e#592#593#0" expanded="true" />
                 <element signature="e#622#623#0" expanded="true" />
@@ -74,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/heroes/Magicien.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
                 <element signature="e#601#602#0" expanded="true" />
                 <element signature="e#633#634#0" expanded="true" />
@@ -92,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/heroes/Arme.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="323">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -101,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/heroes/Sort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="408">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -124,12 +121,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/heroes/Main.java" />
         <option value="$PROJECT_DIR$/src/heroes/Menu.java" />
-        <option value="$PROJECT_DIR$/src/heroes/Sort.java" />
         <option value="$PROJECT_DIR$/src/heroes/Personnage.java" />
+        <option value="$PROJECT_DIR$/src/heroes/Arme.java" />
+        <option value="$PROJECT_DIR$/src/heroes/Sort.java" />
         <option value="$PROJECT_DIR$/src/heroes/Magicien.java" />
         <option value="$PROJECT_DIR$/src/heroes/Guerrier.java" />
         <option value="$PROJECT_DIR$/src/heroes/Play.java" />
-        <option value="$PROJECT_DIR$/src/heroes/Arme.java" />
       </list>
     </option>
   </component>
@@ -250,15 +247,15 @@
       <workItem from="1557818039321" duration="17418000" />
       <workItem from="1557904338655" duration="16604000" />
       <workItem from="1557990178082" duration="16161000" />
-      <workItem from="1558076883078" duration="6482000" />
+      <workItem from="1558076883078" duration="20377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88176000" />
+    <option name="totallyTimeSpent" value="102071000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1945629" />
@@ -270,7 +267,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32394367" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3229491" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28494042" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -278,7 +275,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.17984831" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23726977" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3531961" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -361,21 +358,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/heroes/Personnage.java">
+    <entry file="file://$PROJECT_DIR$/src/heroes/Arme.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/heroes/Magicien.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="e#601#602#0" expanded="true" />
             <element signature="e#633#634#0" expanded="true" />
@@ -391,8 +384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/heroes/Guerrier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="-263">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding>
             <element signature="e#672#673#0" expanded="true" />
             <element signature="e#699#700#0" expanded="true" />
@@ -406,24 +399,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/heroes/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="408">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/heroes/Arme.java">
+    <entry file="file://$PROJECT_DIR$/src/heroes/Personnage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        <state relative-caret-position="357">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/heroes/Play.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        <state relative-caret-position="471">
+          <caret line="190" column="12" selection-start-line="190" selection-start-column="12" selection-end-line="190" selection-end-column="20" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createMage#0;class#Play#0" />
             <element signature="method#menu#0;class#Play#0" />
+            <element signature="method#liste#0;class#Play#0" />
           </folding>
         </state>
       </provider>

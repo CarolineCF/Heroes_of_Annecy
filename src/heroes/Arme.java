@@ -6,8 +6,8 @@ public class Arme {
 
 
     public Arme(String nameWeapon, int nvAtk) {
-    this.nameWeapon = nameWeapon;
-    this.nvAtk = nvAtk;
+        this.nameWeapon = nameWeapon;
+        this.nvAtk = nvAtk;
     }
 
     //SETTER
