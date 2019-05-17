@@ -5,24 +5,28 @@ public class Arme {
     private int nvAtk;
 
 
-    public Arme() {
-
+    public Arme(String nameWeapon, int nvAtk) {
+    this.nameWeapon = nameWeapon;
+    this.nvAtk = nvAtk;
     }
 
     //SETTER
-    public void setNameWeapon(String nom) {
-        this.nameWeapon = nom;
+    public void setNameWeapon(String nameWeapon) {
+        this.nameWeapon = nameWeapon;
     }
+
     //GETTER
-    public String getNameWeapon(){
+    public String getNameWeapon() {
         return nameWeapon;
     }
+
     //SETTER
     public void setNvAtk(int nvAtk) {
         this.nvAtk = nvAtk;
     }
+
     //GETTER
-    public int getNvAtk(){
+    public int getNvAtk() {
         return nvAtk;
     }
 }
