@@ -188,18 +188,52 @@ public class Play {
             System.out.println("\n" + "Entrez le numéro du héro et appuyez sur entrée pour le modifier");
 
             indexa = sc.nextInt();
-            liste();
-
-        }
 
 
         }
+        menuModify(indexa);
 
     }
 
 
+    public static void menuModify(int index) {
+
+        System.out.println("1- modifier le nom" + "\n"
+                + "2- modifier le nombre de pv" + "\n"
+                + "3- modifier la puissance d'atk " + "\n");
+        System.out.println("Votre choix ?");
+        int choice = sc.nextInt();
+        switch (choice) {
+            case 1:
+                System.out.println("Le nom actuel du personnage est "+listehero.get(index).getNom());
+                System.out.println("Entrez le nouveau nom de votre personnage");
+                sc.nextLine();
+                String next = sc.nextLine();
+                listehero.get(index).setNom(next);
+                System.out.println("Voici son nouveau nom "+listehero.get(index).getNom());
+
+                break;
+            case 2:
+                System.out.println("Le nombre actuel de pv est de "+listehero.get(index).getPv());
+                System.out.println("Nouveau nombre de pv ?");
+                sc.nextLine();
+                listehero.get(index).setPv(sc.nextInt());
+                System.out.println("Votre nouveau nombre de pv est de"+listehero.get(index).getPv());
+
+                break;
+            case 3:
+                System.out.println("Atk actuelle du hero "+listehero.get(index).getAtk());
+                System.out.println("Nouveau nombre d'Atk ?");
+                sc.nextLine();
+                listehero.get(index).setAtk(sc.nextInt());
+                System.out.println("Nouvelle puissance fixée à "+listehero.get(index).getAtk());
 
 
+        }
+    }
+
+
+}
 
 
 
