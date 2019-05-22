@@ -6,8 +6,10 @@ import java.util.ListIterator;
 
 public class Play {
 
-    public static ArrayList<Personnage> listehero = new ArrayList();
-    // public static Personnage stockage[] = new Personnage[10];
+    public static ArrayList<Personnage> listehero = new ArrayList(); //version ArrayList
+    // public static Personnage stockage[] = new Personnage[10];  // version tableau classique
+
+
     private static Scanner sc = new Scanner(System.in);
 
     private static String e = "";
@@ -41,19 +43,23 @@ public class Play {
 
                 System.exit(0);
             } else if (classe.equalsIgnoreCase("modifier")) {
-                liste();
                 modify();
 
             } else if (classe.equalsIgnoreCase("delete")) {
                 liste();
                 delete();
 
+            } else if (classe.equalsIgnoreCase("plateau")){
+                Plateau plat1 = new Plateau(64);
+                plat1.contenuPlateau();
             }
 
         }
 
 
     }
+
+
 
     //Function création guerrier
     public static void createGuerr() {
@@ -96,8 +102,8 @@ public class Play {
 
 
         listehero.add(guerrier);
-
         g++;
+
     }
 
     //Function création mage
@@ -148,6 +154,7 @@ public class Play {
 
         System.out.println("\n" + "Plusieurs choix s'offrent à vous:" + "\n"
                 + "Entrez votre choix de personnage (mage / guerrier) ?" + "\n"
+                + "Modifier un héro -> entrez |modifier|" + "\n"
                 + "Supprimer un héro -> entrez |delete|" + "\n"
                 + "Afficher la liste des héros -> entrez |liste|" + "\n"
                 + "Quitter le jeu -> entrez |exit|");
@@ -156,9 +163,10 @@ public class Play {
     //Function affichage liste des héros
     public static void liste() {
 //
-        for (Personnage hero : listehero) {
-            System.out.println("\n" + " Liste des héros: " + hero.getNom() + "\n");
+        for(int i = 0; i < listehero.size(); i++){
+            System.out.println("\n" +" n°"+ i + " ->" +listehero.get(i)  + "\n");
         }
+
     }
 
     public static void delete() {
@@ -180,22 +188,13 @@ public class Play {
 
     public static void modify() {
         int indexa = -1;
-        for (Personnage hero : listehero) {
-            indexa++;
-            System.out.println("\n" + "Héro n°" + indexa);
-            System.out.println(hero);
-
-            System.out.println("\n" + "Entrez le numéro du héro et appuyez sur entrée pour le modifier");
-
-            indexa = sc.nextInt();
-
-
-        }
+        liste();
+        System.out.println("\n" + "Entrez le numéro du héro et appuyez sur entrée pour le modifier");
+        indexa = sc.nextInt();
         menuModify(indexa);
-
     }
 
-
+    //Function menu de modification
     public static void menuModify(int index) {
 
         System.out.println("1- modifier le nom" + "\n"
@@ -205,33 +204,34 @@ public class Play {
         int choice = sc.nextInt();
         switch (choice) {
             case 1:
-                System.out.println("Le nom actuel du personnage est "+listehero.get(index).getNom());
+                System.out.println("Le nom actuel du personnage est " + listehero.get(index).getNom());
                 System.out.println("Entrez le nouveau nom de votre personnage");
                 sc.nextLine();
                 String next = sc.nextLine();
                 listehero.get(index).setNom(next);
-                System.out.println("Voici son nouveau nom "+listehero.get(index).getNom());
+                System.out.println("Voici son nouveau nom " + listehero.get(index).getNom());
 
                 break;
             case 2:
-                System.out.println("Le nombre actuel de pv est de "+listehero.get(index).getPv());
+                System.out.println("Le nombre actuel de pv est de " + listehero.get(index).getPv());
                 System.out.println("Nouveau nombre de pv ?");
                 sc.nextLine();
                 listehero.get(index).setPv(sc.nextInt());
-                System.out.println("Votre nouveau nombre de pv est de"+listehero.get(index).getPv());
+                System.out.println("Votre nouveau nombre de pv est de" + listehero.get(index).getPv());
 
                 break;
             case 3:
-                System.out.println("Atk actuelle du hero "+listehero.get(index).getAtk());
+                System.out.println("Atk actuelle du hero " + listehero.get(index).getAtk());
                 System.out.println("Nouveau nombre d'Atk ?");
                 sc.nextLine();
                 listehero.get(index).setAtk(sc.nextInt());
-                System.out.println("Nouvelle puissance fixée à "+listehero.get(index).getAtk());
+                System.out.println("Nouvelle puissance fixée à " + listehero.get(index).getAtk());
 
 
         }
     }
 
+    //Function plateau
 
 }
 
